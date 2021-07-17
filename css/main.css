@@ -108,7 +108,7 @@
   padding: 2rem;
   background-image: url(https://unsplash.it/600);
   /* placeholder image */
-  backgrond-size: cover;
+  background-size: cover;
   background-color: #444;
   background-blend-mode: multiply;
   color: white;
@@ -151,6 +151,7 @@
   color: transparent;
   margin: 0;
   transition: color 150ms 350ms;
+  display: inline-block;
 }
 
 .card__body::after {
@@ -160,6 +161,7 @@
   bottom: -0.75rem;
   left: -0.75em;
   right: -0.75em;
+  width: 100%;
   background: white;
   z-index: -1;
   -webkit-transform: scaleY(0);
