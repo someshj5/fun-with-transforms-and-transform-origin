@@ -426,3 +426,33 @@ body {
   visibility: visible;
   transition: visibility 0s 1s;
 }
+
+
+
+.accordion {
+  max-width: 420px;
+  text-align: left;
+}
+
+article {
+  border: 1px solid #fff;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: fixed;
+  top: -100vh;
+  left: -100vh;
+}
+input[type=radio] ~ div {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+input[type=radio]:checked ~ div {
+  max-height: 200px;
+}
