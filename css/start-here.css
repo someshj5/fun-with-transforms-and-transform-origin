@@ -10,8 +10,8 @@
   position: relative;
 }
 
-.fancy-link::after{
-  content:'';
+.fancy-link::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -21,12 +21,11 @@
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
   transform-origin: right;
-  -webkit-transform:scaleX(0);
+  -webkit-transform: scaleX(0);
   transition: transform 250ms ease-in;
-
 }
 
-.fancy-link:hover::after{
+.fancy-link:hover::after {
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
   transform-origin: left;
@@ -47,52 +46,49 @@
   margin-left: 1em;
 }
 
-.button::after{
-  content: '';
+.button::after {
+  content: "";
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   background: rgba(0, 0, 0, 0.5);
-
 }
 
-.button-one::after{
-  transform:scaleX(0);
+.button-one::after {
+  transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
 }
 
-.button-one:hover::after{
+.button-one:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.button-two::after{
-  transform:scaleY(0);
+.button-two::after {
+  transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 250ms ease-in;
 }
 
-.button-two:hover::after{
+.button-two:hover::after {
   transform: scaleX(1);
   transform-origin: top;
 }
 
-.button-three::after{
-  transform:scale(0);
+.button-three::after {
+  transform: scale(0);
   transform-origin: bottom right;
   transition: transform 250ms ease-in;
 }
 
-.button-three:hover::after{
+.button-three:hover::after {
   transform: scale(1);
   transform-origin: top left;
 }
-
-
 
 .card {
   padding: 2rem;
@@ -104,17 +100,17 @@
   text-align: left;
 }
 
-.card__title{
+.card__title {
   position: relative;
   display: inline-block;
   margin-bottom: 1rem;
   z-index: 1;
 }
 
-.card__title::after{
-  content: '';
+.card__title::after {
+  content: "";
   position: absolute;
-  top:-0.25rem;
+  top: -0.25rem;
   left: -2rem;
   bottom: -0.25rem;
   width: calc(100% + 4rem);
@@ -123,11 +119,10 @@
   transform: scaleX(0.075);
   transform-origin: left;
   transition: transform 250ms ease-in;
-
 }
 
-.card:hover .card__title::after{
-  transform:scaleX(1);
+.card:hover .card__title::after {
+  transform: scaleX(1);
 }
 
 .card__body {
@@ -148,12 +143,13 @@
   background: white;
   z-index: -1;
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  transform: scaleY(0);
   transition: -webkit-transform 250ms ease-in 250ms;
   transition: transform 250ms ease-in 250ms;
-  transition: transform 250ms ease-in 250ms, -webkit-transform 250ms ease-in 250ms;
+  transition: transform 250ms ease-in 250ms,
+    -webkit-transform 250ms ease-in 250ms;
   -webkit-transform-origin: top;
-          transform-origin: top;
+  transform-origin: top;
 }
 
 .card:hover .card__body {
@@ -162,9 +158,8 @@
 
 .card:hover .card__body::after {
   -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  transform: scaleY(1);
 }
-
 
 body {
   font-family: basic-sans, sans-serif;
@@ -202,7 +197,9 @@ body {
 
 /* @charset "UTF-8"; */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -221,8 +218,8 @@ body {
 
 #moreInfo {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: fixed;
   top: -100%;
   left: -100%;
@@ -250,7 +247,8 @@ body {
   position: absolute;
   transform-style: preserve-3d;
 }
-.mi > *::before, .mi > *::after {
+.mi > *::before,
+.mi > *::after {
   content: "";
   position: absolute;
   top: 0;
@@ -258,7 +256,7 @@ body {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .mi-flap1 {
   top: 0;
@@ -375,7 +373,7 @@ body {
   background-size: 300% 100%;
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow: hidden;
   transform-style: preserve-3d;
 }
@@ -427,8 +425,6 @@ body {
   transition: visibility 0s 1s;
 }
 
-
-
 .accordion {
   max-width: 420px;
   text-align: left;
@@ -440,145 +436,231 @@ article {
   margin: 1em auto;
 }
 
-input[type=radio] {
+input[type="radio"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: fixed;
   top: -100vh;
   left: -100vh;
 }
-input[type=radio] ~ div {
+input[type="radio"] ~ div {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
-input[type=radio]:checked ~ div {
+input[type="radio"]:checked ~ div {
   max-height: 200px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-*, *::before, *::after {
-    padding: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Anton', sans-serif;
-    background-color: black;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  font-family: "Anton", sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* $speed: 12s; */
 
 .loader {
-    position: fixed;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1920px;
-    height: 1080px;
-    animation: endFlash 12s infinite linear;
-    
-    @keyframes endFlash {
-        0%, 89.999%, 95%, 100% { background-color: transparent; }
-        90% { background-color: yellow; }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 1080px;
+  animation: endFlash 12s infinite linear;
+
+  @keyframes endFlash {
+    0%,
+    89.999%,
+    95%,
+    100% {
+      background-color: transparent;
     }
+    90% {
+      background-color: yellow;
+    }
+  }
 }
 
 .flash {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    clip-path: polygon(1058px 354px, 915px 519px, 948px 512px, 884px 618px, 919px 612px, 857px 727px, 998px 568px, 968px 572px, 1029px 473px, 990px 480px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    1058px 354px,
+    915px 519px,
+    948px 512px,
+    884px 618px,
+    919px 612px,
+    857px 727px,
+    998px 568px,
+    968px 572px,
+    1029px 473px,
+    990px 480px
+  );
 }
 
 .loadingBar {
-    position: absolute;
-    left: 0;
-    width: 100%; height: 100%;
-    background-color: yellow;
-    transform-origin: top center;
-    transform: rotate(-10deg);
-    animation: loading $speed linear infinite;
-    
-    @keyframes loading {
-        0%, 11%, 90.001%, 100% { top: 730px; }
-        90% { top: 350px; }
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  transform-origin: top center;
+  transform: rotate(-10deg);
+  animation: loading $speed linear infinite;
+
+  @keyframes loading {
+    0%,
+    11%,
+    90.001%,
+    100% {
+      top: 730px;
     }
+    90% {
+      top: 350px;
+    }
+  }
 }
 
 .sides {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .side {
-    position: absolute;
-    top: 0;
-    width: 100%; height: 100%;
-    
-    &.left {
-        clip-path: polygon(0 0, 1357px 0, 899px 528px, 935px 521px, 872px 626px, 908px 621px, 657px 100%, 0 100%);
-        animation: leftSide $speed ease-in infinite, flashColor $speed linear infinite;
-    }
-    
-    &.right {
-        clip-path: polygon(1247px 0, 1002px 471px, 1042px 464px, 980px 564px, 1014px 559px, 555px 100%, 100% 100%, 100% 0);
-        animation: rightSide $speed ease-in infinite, flashColor $speed linear infinite;
-    }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 
-    @keyframes leftSide {
-        0%, 90.001%, 100% { left: -100%; }
-        10%, 90% { left: 0%; }
-    }
+  &.left {
+    clip-path: polygon(
+      0 0,
+      1357px 0,
+      899px 528px,
+      935px 521px,
+      872px 626px,
+      908px 621px,
+      657px 100%,
+      0 100%
+    );
+    animation: leftSide $speed ease-in infinite,
+      flashColor $speed linear infinite;
+  }
 
-    @keyframes rightSide {
-        0%, 90.001%, 100% { left: 100%; }
-        10%, 90% { left: 0%; }
-    }
+  &.right {
+    clip-path: polygon(
+      1247px 0,
+      1002px 471px,
+      1042px 464px,
+      980px 564px,
+      1014px 559px,
+      555px 100%,
+      100% 100%,
+      100% 0
+    );
+    animation: rightSide $speed ease-in infinite,
+      flashColor $speed linear infinite;
+  }
 
-    @keyframes flashColor {
-        0%, 9.999%, 15%, 100% { background-color: red; }
-        10% { background-color: white; }
+  @keyframes leftSide {
+    0%,
+    90.001%,
+    100% {
+      left: -100%;
     }
+    10%,
+    90% {
+      left: 0%;
+    }
+  }
+
+  @keyframes rightSide {
+    0%,
+    90.001%,
+    100% {
+      left: 100%;
+    }
+    10%,
+    90% {
+      left: 0%;
+    }
+  }
+
+  @keyframes flashColor {
+    0%,
+    9.999%,
+    15%,
+    100% {
+      background-color: red;
+    }
+    10% {
+      background-color: white;
+    }
+  }
 }
 
 .circle {
-    position: absolute;
-    top: calc(50% + 7px); left: 50%;
-    width: 305px;
-    height: 305px;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background-color: white;
-    border: 7px solid black;
-    animation: enter $speed infinite;
+  position: absolute;
+  top: calc(50% + 7px);
+  left: 50%;
+  width: 305px;
+  height: 305px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+  border: 7px solid black;
+  animation: enter $speed infinite;
 }
 
 .text {
-    font-size: 50px;
-    position: absolute;
-    top: calc(50% + 160px); left: calc(50% + 40px);
-    transform: translateX(-50%);
-    animation: enter $speed infinite;
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% + 160px);
+  left: calc(50% + 40px);
+  transform: translateX(-50%);
+  animation: enter $speed infinite;
 }
 
 @keyframes enter {
-    0%, 10%, 90.001%, 100% { opacity: 0; }
-    10.001%, 90% { opacity: 1; }
+  0%,
+  10%,
+  90.001%,
+  100% {
+    opacity: 0;
+  }
+  10.001%,
+  90% {
+    opacity: 1;
+  }
 }
 
 .twitterLink {
   position: fixed;
-  bottom: 0.5em; right: 0.5em;
+  bottom: 0.5em;
+  right: 0.5em;
   & img {
     width: 2em;
     filter: grayscale(100%);
