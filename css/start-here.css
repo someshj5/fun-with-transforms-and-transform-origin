@@ -671,9 +671,7 @@ body {
   filter: grayscale(0%);
 }
 
-
-
-
+/* hamburger css starts*/
 
 * {
   padding: 0;
@@ -880,3 +878,5 @@ svg .path-a {
   stroke-dasharray: 16 300;
   stroke-dashoffset: -85;
 }
+
+/* hamburger css ends*/
