@@ -1,3 +1,3 @@
 function setMenu(e) {
-    e.classList.toggle('on');
+    e.classList.toggle('off');
   }
