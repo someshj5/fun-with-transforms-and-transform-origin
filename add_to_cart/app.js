@@ -25,6 +25,7 @@ button.addEventListener("click", function () {
 			this.style.pointerEvents = "initial";
 			this.classList.remove("tapis-roulant");
 			this.classList.remove("canceled");
+			console.log('__28__')
 		}, 1000);
 	}
 
